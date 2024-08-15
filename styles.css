@@ -60,3 +60,26 @@ button {
 #startScreen p, #endScreen p {
     margin-top: 15px;
 }
+
+@media only screen and (max-width: 600px) {
+    #startScreen, #endScreen {
+        width: 90%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    #ui {
+        top: 5px;
+        left: 5px;
+        font-size: 16px;
+    }
+
+    #startLogo, #endLogo {
+        width: 100%; /* Adjust for smaller screens */
+    }
+}
