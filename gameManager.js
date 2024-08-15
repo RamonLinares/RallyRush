@@ -90,7 +90,7 @@ class GameManager {
                 position: new THREE.Vector3(0, 0, -10),
                 speed: 0,
                 acceleration: 0.010,
-                deceleration: 0.0025,
+                deceleration: 0.002,
                 brakePower: 0.01,
                 maxSpeed: 2.5,
                 minSpeed: 0,

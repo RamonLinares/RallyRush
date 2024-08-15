@@ -83,3 +83,55 @@ button {
         width: 100%; /* Adjust for smaller screens */
     }
 }
+
+#mobileControls {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    z-index: 10;
+    pointer-events: none; /* To ensure they are not blocking any other interactions */
+}
+
+#mobileControls button {
+    pointer-events: all; /* Re-enable pointer events on buttons */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    margin: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#leftControls {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+}
+
+#rightControls {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    display: flex;
+    flex-direction: row; /* Place buttons side by side */
+}
+
+@media only screen and (max-width: 600px) {
+    #mobileControls {
+        display: block;
+    }
+
+    #ui {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
