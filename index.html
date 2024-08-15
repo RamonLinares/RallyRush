@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Out Run Style Game - Complete Edition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <audio id="gameMusic" src="assets/game.mp3" preload="auto" loop="true"></audio>
+    <audio id="desertMusic" src="assets/desert.mp3" preload="auto"></audio>
+    <audio id="alpineMusic" src="assets/alpine.mp3" preload="auto"></audio>
+    <audio id="scotlandMusic" src="assets/scotland.mp3" preload="auto"></audio>
+    
+
+    <div id="ui">
+        <div id="speed"></div>
+        <div id="timer"></div>
+    </div>
+    <!-- Start Screen -->
+    <div id="startScreen">
+        <img id="startLogo" src="assets/game_logo.jpeg" alt="Rally Rush Logo" />
+        <p>Use arrow keys to control the car.</p>
+        <select id="circuitSelect">
+            <option value="scotland">Scotland</option>
+            <option value="desert">Desert</option>
+            <option value="alpine">Alpine</option>
+        </select>
+        <button id="startButton">Start Game</button>
+        <p>Press Enter to start</p>
+    </div>
+
+    <!-- End Screen -->
+    <div id="endScreen" style="display:none;">
+        <img id="endLogo" src="assets/game_logo.jpeg" alt="Rally Rush Logo" />
+        <h1>Game Over!</h1>
+        <p id="finalTime"></p>
+        <div id="scoreboard"></div>
+        <button id="restartButton">Restart</button>
+        <button id="changeCircuitButton">Change Circuit</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="roadGenerator.js"></script>
+    <script src="gameManager.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+# Ignore node_modules folder
+node_modules/
+
+# Ignore logs
+*.log
+
+# Ignore environment variable files
+.env
+
+# Ignore audio, images, or other large files (optional)
+*.mp3
+*.png
+*.jpg
+*.jpeg
+*.webp

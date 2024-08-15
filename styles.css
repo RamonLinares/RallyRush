@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+canvas {
+    display: block;
+}
+
+#ui,
+#startScreen,
+#endScreen {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px black;
+}
+
+#startScreen,
+#endScreen {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#scoreboard {
+    margin-top: 20px;
+    text-align: left;
+}
+#startLogo, #endLogo {
+    width: 500px; /* Adjust the size as needed */
+    margin-bottom: 20px; /* Adds space between the logo and the text below */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#startScreen, #endScreen {
+    text-align: center; /* Centers the content horizontally */
+}
+
+#startScreen h1, #endScreen h1 {
+    margin-top: 10px; /* Adds space between the logo and the title */
+}
+
+#startScreen p, #endScreen p {
+    margin-top: 15px;
+}
